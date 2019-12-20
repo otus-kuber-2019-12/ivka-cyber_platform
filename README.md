@@ -1,2 +1,6 @@
 # ivka-cyber_platform
-ivka-cyber Platform repository
+Kubernetes as Platform repository
+
+## Домашки
+
+1. [Intro](./kubernetes-intro)
