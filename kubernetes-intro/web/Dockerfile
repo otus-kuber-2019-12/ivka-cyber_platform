@@ -23,8 +23,6 @@ RUN  echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
    chown -R $UNAME:$UNAME /var/lib/nginx && \
    chown -R $UNAME:$UNAME /var/log/nginx
 
-COPY ./app /app
-
 VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx", "/var/www/html"]
 
 WORKDIR /etc/nginx

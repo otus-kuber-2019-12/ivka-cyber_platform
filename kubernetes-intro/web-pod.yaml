@@ -7,7 +7,10 @@ metadata:
 spec:
   containers:
   - name: web
-    image: petryalta/kuber-2019-06:job1
+    image: petryalta/kubernetes-2019-12
+    volumeMounts:
+    - name: app
+      mountPath: /app
   initContainers:
   - name: init-web
     image: busybox:1.31.0
