@@ -2,7 +2,7 @@
 
 Создано определение [mysqls.otus.homework](./deploy/crd.yaml) и ресурс [mysql-instance](./deploy/cr.yml)
 
-Создан [ServiceAccount](./deploy/service-account.yml) и [назначена](./deploy/ClusterRoleBinding.yml) ему роль [mysql-operator](./delpoy/role.yml), которой все разрешено.
+Создан [ServiceAccount](./deploy/service-account.yml) и [назначена](./deploy/role-binding.yml) ему роль [mysql-operator](./delpoy/role.yml), которой все разрешено.
 
 Рассмотрен пример создания собственного [оператора](./build/mysql-operator.py) на Python, для обработки объектов типа MySQL.
 Оператор генерирует манифесты с помощью [шаблонов](./build/templates), и умеет:
